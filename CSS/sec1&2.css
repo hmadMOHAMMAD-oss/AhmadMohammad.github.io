@@ -1,0 +1,294 @@
+root {
+    --cherry: 'Cherry Bomb One', cursive;
+    --main-orange-color : #FDC330;
+    --main-font : 'Ubuntu', sans-serif;
+    --Space : url("https://www.31-agency.com/MainSite/Requirements/IMG/SpaceBg.gif");
+    --back-Ground-withPlanet : url(Images/Screen\ back\ ground\ 4.jpg);
+    --space-bachground : url(Images/Space-background.jpg)
+}
+
+body {
+    margin: 0;
+}
+
+/* Nav Bar-Start */
+nav {
+    background-image: var(--back-Ground-withPlanet);
+    padding: 10px;
+    background-color: #fff8e7;
+    height: 900px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#pref-sec {
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+    font-family: var(--main-font)
+}
+
+.planet-text{
+    text-align: justify;
+    letter-spacing: -1px;
+}
+
+.pref {
+    margin: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 30px;
+}
+
+.pref:hover {
+    color: #FDC330;
+    text-shadow: 1px 1px 5px #FDC330;
+}
+
+/*****/
+#main-nav {
+    overflow: hidden;
+    padding: 10px;
+    font-family: 'Barriecito', cursive;
+}
+
+#p-nav {
+    margin-top: 250px;
+    margin-left: 100px;
+    font-size: 50px;
+    line-height: 70px;
+    color: #FDC330;
+
+}
+
+#solar-system-img {
+    float: right;
+    width: 540px;
+    margin-right: 20px;
+}
+
+/* Animation */
+#spin-container {
+    position: relative;
+    top: -50px;
+    width: 400px;
+    height: 100px;
+}
+
+#spin {
+    color: #BC6264;
+    margin-left: -400px;
+    /* Initial position outside the container */
+    font-size: 70px;
+    white-space: nowrap;
+}
+
+#spin:after {
+    content: "";
+    color: "";
+    animation: slideIn 2s forwards, spin 15s linear infinite;
+}
+
+@keyframes slideIn {
+    0% {
+        margin-left: -400px;
+    }
+
+    100% {
+        margin-left: 500px;
+        /* End position */
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90% {
+        opacity: 1;
+    }
+
+    5%,
+    15%,
+    25%,
+    35%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85%,
+    95% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    0% {
+        content: "Earth";
+        color: rgb(101, 231, 223);
+    }
+
+    10% {
+        content: "Saturn";
+        color: rgb(200, 226, 53);
+    }
+
+    20% {
+        content: "Jupiter";
+        color: rgb(139, 117, 7);
+    }
+
+    30% {
+        content: "Venus";
+        color: rgb(236, 101, 11);
+    }
+
+    40% {
+        content: "Mars";
+        color: rgb(32, 46, 202);
+    }
+
+    50% {
+        content: "Neptune";
+        color: rgb(185, 56, 56);
+    }
+
+    60% {
+        content: "Mercury";
+        color: rgb(149, 134, 134);
+    }
+
+    70% {
+        content: "Uranus";
+        color: rgb(11, 74, 134);
+    }
+
+    80% {
+        content: "Earth";
+        color: rgb(101, 231, 223);
+    }
+
+    90% {
+        content: "Venus";
+        color: rgb(236, 101, 11);
+    }
+
+    100% {
+        content: "Mars";
+        color: rgb(32, 46, 202);
+    }
+}
+
+/* Nav Bar-End */
+
+/* Main Bar-Start */
+
+/* Slider SEC / STart */
+#sec1-main {
+    height: 700px;
+    background-image: url(Images/PLanets/Earth.png), url(Images/PLanets/Mars.png), url(Images/Start-backGround.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 180px, auto;
+    background-position: top left, right bottom, center;
+    padding: 20px;
+}
+
+#sec1-h1 {
+    margin-bottom: 100px;
+    color: #FDC330;
+    font-family: 'Cherry Bomb One', cursive;
+    margin-left: 400px;
+}
+
+/* Slider */
+
+.slider {
+    width: 1500px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cards {
+    border-radius: 10px;
+    display: inline-block;
+    height: 400px;
+    width: calc(100% / 3);
+    background-color: #FDC330;
+    margin: 5px;
+    transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+    font-family: var(--main-font);
+    color: white;
+    padding: 10px;
+    content: normal;
+}
+
+
+.cards.active {
+    background-color: #fffaed;
+    border: 2px solid #FDC330;
+    color: rgb(0, 0, 0);
+}
+
+.slider-controls-b {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 80px;
+}
+
+.slider-control {
+
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#left-but {
+    background-color: #ffffff;
+    color: #FDC330;
+    font-size: x-large;
+    border: solid 2px #FDC330;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+#left-but:hover {
+    background-color: #FDC330;
+    color: #FFF8E7;
+    font-size: x-large;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+#right-but {
+    background-color: #ffffff;
+    color: #FDC330;
+    font-size: x-large;
+    border: solid 2px #FDC330;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+#right-but:hover {
+    background-color: #FDC330;
+    color: #FFF8E7;
+    font-size: x-large;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+
+
+/* Slider SEc / END */

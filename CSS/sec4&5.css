@@ -1,0 +1,434 @@
+:root {
+    --cherry: 'Cherry Bomb One', cursive;
+    --main-orange-color : #FDC330;
+    --main-font : 'Ubuntu', sans-serif;
+    --Space : url("https://www.31-agency.com/MainSite/Requirements/IMG/SpaceBg.gif");
+    --back-Ground-withPlanet : url(Images/Screen\ back\ ground\ 4.jpg);
+    --space-bachground : url(Images/Space-background.jpg)
+}
+
+/* Scroll-Section / Start */
+#Scroll-Section {
+    color: #FDC330;
+    background-image:var(--space-bachground);
+    background-size:contain;
+    background-position: bottom right , top left;
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: #fff8e7;
+    height: 830px;
+}
+
+.container-side {
+    display: flex;
+    /* Use flexbox to arrange the divs side by side */
+}
+
+.side-by-side-divs {
+    height: 700px;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-slider {
+    height: 80%;
+    width: 80%;
+    background-color: rgba(199, 199, 199, 0);
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#left-slider::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+}
+
+#left-slider::-webkit-scrollbar {
+    width: 10px;
+}
+
+#left-slider::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px #dfdfdf(0, 0, 0, .3);
+    background-color: #FDC330;
+    border: 1px solid #FDC330;
+}
+
+#left-slider-h3 {
+    font-family: var(--cherry);
+    margin-left: 10%;
+}
+
+
+.scroll-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    background-color: #FDC330;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.scroll-card:hover {
+    transform: scale(1.1);
+    background-color: #fddf9c;
+}
+
+#space-x {
+    background-color: rgb(224, 224, 224);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#space-x:hover {
+    transform: scale(1.1);
+    background-color: rgb(243, 243, 243);
+}
+
+#blue-orgin {
+    background-color: rgb(128, 197, 236);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#blue-orgin:hover {
+    transform: scale(1.1);
+    background-color: rgb(199, 231, 250);
+}
+
+#NASA {
+    background-color: rgb(128, 178, 236);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#NASA:hover {
+    transform: scale(1.1);
+    background-color: rgb(212, 232, 255);
+}
+
+#ESA {
+    background-color: rgb(124, 150, 179);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#ESA:hover {
+    transform: scale(1.1);
+    background-color: rgb(187, 203, 221);
+}
+
+#Virgin {
+    background-color: rgb(200, 143, 247);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#Virgin:hover {
+    transform: scale(1.1);
+    background-color: rgb(157, 45, 248);
+}
+
+#Rocket-lap {
+    background-color: rgb(250, 153, 62);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#Rocket-lap:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 182, 114);
+}
+.right-side-slider {
+    margin-top: 15%;
+}
+
+.right-side-slider-h1{
+    color: var(--main-orange-color);
+    font-family: var(--cherry);
+}
+
+.right-side-slider-p{
+    font-family: var(--main-font);
+    color: white;
+}
+
+.mySlides {
+    display: none
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -25px;
+    color: #fdc330;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #fdc330;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+/*  Scroll Section / End */
+
+/*  Slider-3 Section / Start */
+
+#slider3{
+    height: 820px;
+    background-image: url(Images/Sintest2.png), url(Images/Sintest1.png), url(Images/Start-backGround.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 320px, 250px, auto;
+    background-position: top left, right bottom, center;
+    padding: 20px;
+}
+
+.slider-last {
+    max-width: 100rem;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-last {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.slider-last>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background-color: #ffebba;
+    font-family: inherit;
+    color: #FDC330;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, font-size 0.3s ease-in-out ,
+    height 0.3s ease-in-out , width 0.3s ease-in-out ;
+}
+
+.slider__btn:hover{
+    background-color: #FDC330;
+    color: #ffebba;
+    font-size: 3.7rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+.slider__btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+}
+
+.dots-last {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dots__dot {
+    border: none;
+    background-color: #ffe5a4;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.dots__dot:last-child {
+    margin: 0;
+}
+
+.dots__dot--active {
+    background-color: #FDC330;
+    opacity: 1;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+    width: 65%;
+    position: relative;
+    background-color: var(--main-orange-color);
+    opacity: 0.8;
+    padding: 5px;
+    border-radius:10px ;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+
+
+.testimonial__header {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+    color: #666;
+}
+
+.testimonial__author {
+    margin-left: 3rem;
+    font-style: normal;
+
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 2rem;
+}
+
+.testimonial__photo {
+    grid-row: 1 / span 2;
+    width: 150px;
+    border-radius: 120%;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.testimonial__name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    align-self: end;
+    margin: 0;
+}
+
+.testimonial__location {
+    font-size: 1.5rem;
+}
+
+.section__title--testimonials {
+    margin-bottom: 4rem;
+}
+
+/* SIGNUP */
+.section--sign-up {
+    background-color: #37383d;
+    border-top: none;
+    border-bottom: 1px solid #444;
+    text-align: center;
+    padding: 10rem 3rem;
+}
+
+.section--sign-up .section__header {
+    color: #fff;
+    text-align: center;
+}
+
+.section--sign-up .section__title {
+    margin-bottom: 6rem;
+}
+
+.section--sign-up .btn {
+    font-size: 1.9rem;
+    padding: 2rem 5rem;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec3-h1{
+    color: #FDC330;
+    font-family: 'Cherry Bomb One', cursive;
+    margin-left: 22%;
+    margin-bottom: 30px;
+}

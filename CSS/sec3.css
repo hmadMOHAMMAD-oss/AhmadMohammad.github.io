@@ -1,0 +1,247 @@
+:root {
+    --cherry: 'Cherry Bomb One', cursive;
+    --main-orange-color : #FDC330;
+    --main-font : 'Ubuntu', sans-serif;
+    --Space : url("https://www.31-agency.com/MainSite/Requirements/IMG/SpaceBg.gif");
+    --back-Ground-withPlanet : url(Images/Screen\ back\ ground\ 4.jpg);
+    --space-bachground : url(Images/Space-background.jpg)
+}
+
+/* Card SEc / Start */
+#card-sec {
+    background-image: var(--space-bachground) ;
+    background-size: contain;
+    margin-top: 20px;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: #fff8e7;
+    height: 850px;
+    margin-bottom: 75px;
+}
+
+.firt-row {
+    margin-bottom: 30px;
+}
+
+.card-sec-imegs {
+    width: 100px;
+    position: relative;
+    bottom: 28px;
+    display: inline-block
+}
+
+.card-sec-dives {
+    padding: 5px;
+    width: 200px;
+    height: 340px;
+    background-color: #FDC330;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: var(--main-font);
+}
+
+#sec2-h1 {
+    color: #FDC330;
+    font-family: 'Cherry Bomb One', cursive;
+    margin-left: 35%;
+    margin-bottom: 30px;
+}
+
+#earth {
+    background-color: #afdb7200;
+    border: solid 0px #B0DB72;
+    background-image: url(Images/PLanets/Earth.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.5s ease-in-out, text-indent 0.1s ease-in 0.0s, background-color 0.3s ease-in-out;
+}
+
+#earth:hover {
+    background-color: #B0DB72;
+    background-image: url(Images/PLanets/Earth.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Jupitar {
+    background-color: rgba(245, 180, 127, 0);
+    border: solid 0px rgb(245, 180, 127);
+    background-image: url(Images/PLanets/Jupetar.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Jupitar:hover {
+    background-color: rgb(245, 180, 127);
+    background-image: url(Images/PLanets/Jupetar.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Saturn {
+    background-color: rgba(238, 163, 52, 0);
+    border: solid 0px rgba(238, 163, 52, 0.884);
+    background-image: url(Images/PLanets/Saturn.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Saturn:hover {
+    background-color: rgb(238, 163, 52);
+    background-image: url(Images/PLanets/Saturn.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Neptune {
+    background-color: rgba(79, 143, 196, 0);
+    border: solid 0px rgba(238, 163, 52, 0.884);
+    background-image: url(Images/PLanets/Neptune.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Neptune:hover {
+    background-color: rgb(79, 143, 196);
+    background-image: url(Images/PLanets/Neptune.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Uranus {
+    background-color: rgba(79, 143, 196, 0);
+    border: solid 0px rgba(238, 163, 52, 0.884);
+    background-image: url(Images/PLanets/Uranus.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Uranus:hover {
+    background-color: rgb(79, 143, 196);
+    background-image: url(Images/PLanets/Uranus.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Venus {
+    background-color: #ffe46900;
+    border: solid 0px rgba(238, 163, 52, 0.884);
+    background-image: url(Images/PLanets/Venus.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Venus:hover {
+    background-color: #ffe469;
+    background-image: url(Images/PLanets/Venus.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Mercury {
+    background-color: #74737300;
+    border: solid 0px rgba(238, 163, 52, 0.884);
+    background-image: url(Images/PLanets/Mercury.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Mercury:hover {
+    background-color: #949393;
+    background-image: url(Images/PLanets/Mercury.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+#Mars {
+    background-color: rgba(255, 125, 65, 0);
+    border: solid 0px rgba(238, 163, 52, 0.884);
+    background-image: url(Images/PLanets/Mars.png);
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    text-indent: -90000px;
+    transition: background-size 0.4s ease-in-out, text-indent 0.0s ease-in 0.1s, background-color 0.3s ease-in-out;
+}
+
+#Mars:hover {
+    background-color: rgb(255, 125, 65);
+    background-image: url(Images/PLanets/Mars.png);
+    background-position: top center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    text-indent: 0;
+}
+
+/* Card SEc / END */
+
+/* Dash-Bord-Section / Start */
+.Dash-Bord-Section {
+    height: 700px;
+    background-image: url(Images/PLanets/Earth.png), url(Images/PLanets/Mars.png), url(Images/Start-backGround.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 180px, auto;
+    background-position: top left, right bottom, center;
+    padding: 20px;
+}
+
+#header-class-board {
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+
+.main-class-board {
+    margin-left: 30%;
+    margin-bottom: 70px;
+}
+
+.class-board {
+    background-image: url(Images/class-board2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    height: 500px;
+    width: 1200px;
+    margin-left: 15%;
+    border: solid 15px burlywood;
+    border-image: url(Images/wood-pattern2.jpeg) 50 round;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dash-Bord-Section / End */

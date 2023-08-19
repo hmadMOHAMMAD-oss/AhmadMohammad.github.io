@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!--*-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <!-- *Cherry -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <!-- *Main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Font Awsem Link -->
+    <script src="https://kit.fontawesome.com/08d515a87b.js" crossorigin="anonymous"></script>
+    <!-- Boot Strap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Iconr -->
+    <link rel="icon" href="Images/PLanets/Earth.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav id="nav">
+        <img src="Images/Sun-logo.png" alt="" style="width: 150px; margin-left: 10px;">
+        <section id="pref-sec">
+            <span><a style="text-decoration: none;" class="pref" href="#sec1-main">Galaxy</a> </span>
+            <span class="pref"><a style="text-decoration: none;" class="pref" href="#card-sec">Our Planets</a> </span>
+            <span class="pref"><a style="text-decoration: none;" class="pref" href="#Scroll-Section">Space
+                    Organaization</a> </span>
+            <span class="pref"><a style="text-decoration: none;" class="pref" href="#slider3">scientist</a></span>
+        </section>
+
+        <div id="main-nav">
+            <!-- <img src="Images/Sun5.png" id="solar-system-img"> -->
+            <p id="p-nav">Lets Know Our Univers <br> Better and Our Planets </p>
+            <div id="spin-container">
+                <span id="spin"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <a href="#nav" style="text-decoration: none;"><i class="fa-solid fa-arrow-left stiky"></i></a>
+        <!-- Slider Section / Start -->
+        <section id="sec1-main" class="hidden">
+
+            <h1 id="sec1-h1">there is many galaxies in the universe</h1>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="cards" id="c1">
+                        <center>
+                            <h1>Ellipticals</h1>
+                            <p>Galaxy</p>
+                        </center>
+                    </div>
+                    <div class="cards active">
+                        <center>
+                            <h1>Type-cD galaxies</h1>
+                            <p>Galaxy</p>
+                        </center>
+                    </div>
+                    <div class="cards">
+                        <center>
+                            <h1>Type-cD galaxies</h1>
+                            <p>Galaxy</p>
+                        </center>
+
+                    </div>
+                    <div class="cards">
+                        <center>
+                            <h1>Spirals</h1>
+                            <p>Galaxy</p>
+                        </center>
+                    </div>
+                    <div class="cards">
+                        <center>
+                            <h1>Barred spiral galaxy</h1>
+                            <p>Galaxy</p>
+                        </center>
+                    </div>
+                    <div class="cards">
+                        <center>
+                            <h1>Super-luminous spirsdfsdfsfal</h1>
+                            <p> Galaxys </p>
+                        </center>
+
+                    </div>
+                    <div class="cards" id="c7">
+                        <center>
+                            <h1>Dwarfs</h1>
+                            <p>Galaxy</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls-b">
+                <span class="slider-control" onclick="moveBackward()">
+                    <i id="left-but" class="fa-solid fa-arrow-left"></i></span>
+                <span class="slider-control" onclick="moveForward()">
+                    <i id="right-but" class="fa-solid fa-arrow-right"></i> </span>
+            </div>
+        </section>
+        <!-- Slider Section / End -->
+
+        <!--  Card Section / Start -->
+        <section id="card-sec" class="hidden">
+            <h1 id="sec2-h1"> these are Our Planet</h1>
+            <div class="container text-center firt-row">
+                <div class="row">
+                    <div class="card-sec-dives col" id="earth">
+                        <img src="Images/PLanets/Earth.png" alt="" class="card-sec-imegs">
+                        <h3>Earth</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                    <div class="card-sec-dives col" id="Jupitar">
+                        <img src="Images/PLanets/Jupetar.png" alt="" class="card-sec-imegs">
+                        <h3>Jupitar</h3>
+                        <p class=" planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                    <div class="card-sec-dives col" id="Saturn">
+                        <img src="Images/PLanets/Saturn.png" alt="" class="card-sec-imegs" style="bottom: 34px;">
+                        <h3>saturn</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                    <div class="card-sec-dives col" id="Neptune">
+                        <img src="Images/PLanets/Neptune.png" alt="" class="card-sec-imegs" style="bottom: 34px;">
+                        <h3>Neptune</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center second-row">
+                <div class="row">
+                    <div class="card-sec-dives col" id="Uranus">
+                        <img src="Images/PLanets/Uranus.png" alt="" class="card-sec-imegs" style="bottom: 34px;">
+                        <h3>Uranus</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                    <div class="card-sec-dives col" id="Venus">
+                        <img src="Images/PLanets/Venus.png" alt="" class="card-sec-imegs" style="bottom: 34px;">
+                        <h3>Venus</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                    <div class="card-sec-dives col" id="Mercury">
+                        <img src="Images/PLanets/Mercury.png" alt="" class="card-sec-imegs" style="bottom: 34px;">
+                        <h3>Mercury</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                    <div class="card-sec-dives col" id="Mars">
+                        <img src="Images/PLanets/Mars.png" alt="" class="card-sec-imegs" style="bottom: 34px;">
+                        <h3>Mars</h3>
+                        <p class="planet-text"> he National Aeronautics and Space Administration is an independent
+                            agency of the
+                            U.S. federal government responsible for the civil space program, aeronautics research</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Card Section / End -->
+
+        <!--  Dash Bord Section / Start -->
+        <section class="Dash-Bord-Section hidden">
+            <div class="class-board">
+                <div id="header-class-board"><a id="header-class-board"><img
+                            src="https://fontmeme.com/permalink/230817/801383e9a93bdc6b4d4631034776516e.png"
+                            alt="chalk-fonts" border="0"></a></div>
+                <div class="main-class-board">
+                    <a><img src="https://fontmeme.com/permalink/230817/ead423029aa8d1ac739be318c3bd955b.png"
+                            alt="chalk-fonts" border="0"></a>
+                    <a href="https://en.wikipedia.org/wiki/Planet" target="_blank"><img
+                            src="https://fontmeme.com/permalink/230817/06723ed09db0021534356387931d59d5.png"
+                            alt="chalk-fonts" border="0"></a>
+                </div>
+                <div class="main-class-board">
+                    <a><img src="https://fontmeme.com/permalink/230817/ead423029aa8d1ac739be318c3bd955b.png"
+                            alt="chalk-fonts" border="0"></a>
+                    <a href="https://en.wikipedia.org/wiki/Galaxy#:~:text=A%20galaxy%20is%20a%20system,matter%20bound%20together%20by%20gravity."
+                        target="_blank"><img
+                            src="https://fontmeme.com/permalink/230817/da585efb6948432d1ed4763269a57f10.png"
+                            alt="chalk-fonts" border="0"></a>
+                </div>
+            </div>
+        </section>
+        <!--  Dash Bord Section / End -->
+
+        <!--  Scroll Section / Start -->
+        <section id="Scroll-Section" class="hidden">
+            <div class="container-side">
+                <div class="side-by-side-divs" id="left-side">
+                    <div id="left-slider">
+                        <h3 id="left-slider-h3"> The Largest Space Companies </h3>
+                        <div class="scroll-card" id="NASA" onclick="currentSlide(1)">
+                            <h4><img src="Images/com/NASA_logo.svg.png" alt="" style="width: 100px;"></h4>
+                        </div>
+                        <div class="scroll-card" id="space-x" onclick="currentSlide(2)">
+                            <h4><img src="Images/com/x.png" alt="" style="width: 100px;"> <span
+                                    style="color: rgb(44, 44, 44);">Space X</span></h4>
+                        </div>
+                        <div class="scroll-card" id="ESA" onclick="currentSlide(3)">
+                            <h4><img src="Images/com/ESA.webp" alt="" style="width: 100px;"></h4>
+                        </div>
+                        <div class="scroll-card" id="blue-orgin" onclick="currentSlide(4)">
+                            <h4><img src="Images/com/Blue.png" alt="" style="width: 100px;"></h4>
+                        </div>
+                        <div class="scroll-card" id="Virgin" onclick="currentSlide(5)">
+                            <h4><img src="Images/com/Virgin.png" alt="" style="width: 100px;"></h4>
+                        </div>
+                        <div class="scroll-card" id="Rocket-lap" onclick="currentSlide(6)">
+                            <h4><img src="Images/com/Rocket-lap.png" alt="" style="width: 100px;"></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-by-side-divs" id="right-side">
+                    <div class="right-side-slider">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <div class="numbertext">
+                                    <img src="Images/com/NASA_logo.svg.png" alt="" style="width: 350px;">
+                                    <div>
+                                        <h1 Class="right-side-slider-h1">NASA</h1>
+                                        <p Class="right-side-slider-p">he National Aeronautics and Space Administration
+                                            (NASA /næsə/) is an
+                                            independent agency of the U.S. federal government responsible for the civil
+                                            space program, aeronautics research, and space research. Established in
+                                            1958, NASA succeeded the National Advisory Committee for Aeronautics (NACA)
+                                            to give the U.S. space development effort a distinctly civilian orientation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">
+                                    <img src="Images/com/x2.png" alt="" style="width: 350px; margin-right: 20px;">
+                                    <div>
+                                        <h1 Class="right-side-slider-h1">Space X </h1>
+                                        <p Class="right-side-slider-p">Space Exploration Technologies Corp.,[7] doing
+                                            business as SpaceX, is an
+                                            American spacecraft manufacturer, launch service provider and satellite
+                                            communications company headquartered in Hawthorne, California. The company
+                                            was founded in 2002 by Elon Musk with the goal of reducing space
+                                            transportation costs and to colonize Mars.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="mySlides">
+                                <div class="numbertext">
+                                    <img src="Images/com/ESA.webp" alt="" style="width: 280px; margin-right: 30px;">
+                                    <div>
+                                        <h1 Class="right-side-slider-h1">Esa</h1>
+                                        <p Class="right-side-slider-p">European Space Agency[a] is an intergovernmental
+                                            organisation of 22 member
+                                            states[7] dedicated to the exploration of space. Established in 1975 and
+                                            headquartered in Paris, ESA has a worldwide staff of about 2,200, as of
+                                            2018,[8] and an annual budget of about €7.08 billion, as of 2023 of reducing
+                                            space
+                                            transportation costs and to colonize Mars.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">
+                                    <img src="Images/com/Blue.png" alt="" style="width: 280px; margin-right: 30px;">
+                                    <div>
+                                        <h1 Class="right-side-slider-h1">Blue Origin</h1>
+                                        <p Class="right-side-slider-p">European Space Agency[a] is an intergovernmental
+                                            organisation of 22 member
+                                            states[7] dedicated to the exploration of space. Established in 1975 and
+                                            headquartered in Paris, ESA has a worldwide staff of about 2,200, as of
+                                            2018,[8] and an annual budget of about €7.08 billion, as of 2023 of reducing
+                                            space
+                                            transportation costs and to colonize Mars.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">
+                                    <img src="Images/com/Virgin.png" alt="" style="width: 280px; margin-right: 30px;">
+                                    <div>
+                                        <h1 Class="right-side-slider-h1">Virgin</h1>
+                                        <p Class="right-side-slider-p">European Space Agency[a] is an intergovernmental
+                                            organisation of 22 member
+                                            states[7] dedicated to the exploration of space. Established in 1975 and
+                                            headquartered in Paris, ESA has a worldwide staff of about 2,200, as of
+                                            2018,[8] and an annual budget of about €7.08 billion, as of 2023 of reducing
+                                            space
+                                            transportation costs and to colonize Mars.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">
+                                    <img src="Images/com/Rocket-lap2.png" alt=""
+                                        style="width: 280px; margin-right: 30px;">
+                                    <div>
+                                        <h1 Class="right-side-slider-h1">Rocket-lap</h1>
+                                        <p Class="right-side-slider-p">European Space Agency[a] is an intergovernmental
+                                            organisation of 22 member
+                                            states[7] dedicated to the exploration of space. Established in 1975 and
+                                            headquartered in Paris, ESA has a worldwide staff of about 2,200, as of
+                                            2018,[8] and an annual budget of about €7.08 billion, as of 2023 of reducing
+                                            space
+                                            transportation costs and to colonize Mars.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                        </div>
+                    </div>
+        </section>
+        <!--  Scroll Section / End -->
+
+        <!-- Slider-3 Section / Start -->
+        <section id="slider3" class="hidden">
+            <h1 id="sec3-h1"> Best scientist contribute to this field </h1>
+            <div class="slider-last">
+                <div class="slide-last">
+                    <div class="testimonial">
+                        <h5 class="testimonial__header">Albert Einstein</h5>
+                        <blockquote class="testimonial__text">
+                            Albert Einstein (/ˈaɪnstaɪn/ EYEN-styne;[4] German: [ˈalbɛʁt ˈʔaɪnʃtaɪn] (listen); 14 March
+                            1879 – 18 April 1955) was a German-born theoretical physicist,[5] widely held to be one of
+                            the greatest and most influential scientists of all time. Best known for developing the
+                            theory of relativity, he also made important contributions to quantum mechanics, and was
+                            thus a central figure in the revolutionary reshaping of the scientific understanding of
+                            nature that modern physics accomplished.
+                        </blockquote>
+                        <address class="testimonial__author">
+                            <img src="Images/Sintest/einstein.jpeg" alt="" class="testimonial__photo" />
+                            <h6 class="testimonial__name">Aarav Lynn</h6>
+                            <p class="testimonial__location">San Francisco, USA</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="slide-last">
+                    <div class="testimonial">
+                        <h5 class="testimonial__header">
+                            The last step to becoming a complete minimalist
+                        </h5>
+                        <blockquote class="testimonial__text">
+                            Albert Einstein (/ˈaɪnstaɪn/ EYEN-styne;[4] German: [ˈalbɛʁt ˈʔaɪnʃtaɪn] (listen); 14 March
+                            1879 – 18 April 1955) was a German-born theoretical physicist,[5] widely held to be one of
+                            the greatest and most influential scientists of all time. Best known for developing the
+                            theory of relativity, he also made important contributions to quantum mechanics, and was
+                            thus a central figure in the revolutionary reshaping of the scientific understanding of
+                            nature that modern physics accomplished.
+                        </blockquote>
+                        <address class="testimonial__author">
+                            <img src="Images/Sintest/einstein.jpeg" alt="" class="testimonial__photo" />
+                            <h6 class="testimonial__name">Miyah Miles</h6>
+                            <p class="testimonial__location">London, UK</p>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="slide-last">
+                    <div class="testimonial">
+                        <h5 class="testimonial__header">
+                            Finally free from old-school banks
+                        </h5>
+                        <blockquote class="testimonial__text">
+                            Albert Einstein (/ˈaɪnstaɪn/ EYEN-styne;[4] German: [ˈalbɛʁt ˈʔaɪnʃtaɪn] (listen); 14 March
+                            1879 – 18 April 1955) was a German-born theoretical physicist,[5] widely held to be one of
+                            the greatest and most influential scientists of all time. Best known for developing the
+                            theory of relativity, he also made important contributions to quantum mechanics, and was
+                            thus a central figure in the revolutionary reshaping of the scientific understanding of
+                            nature that modern physics accomplished.
+                        </blockquote>
+                        <address class="testimonial__author">
+                            <img src="Images/Sintest/einstein.jpeg" alt="" class="testimonial__photo" />
+                            <h6 class="testimonial__name">Francisco Gomes</h6>
+                            <p class="testimonial__location">Lisbon, Portugal</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="dots-last"></div>
+                <button class="slider__btn slider__btn--left">&larr;</button>
+                <button class="slider__btn slider__btn--right">&rarr;</button>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- JS Link -->
+    <script src="js.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- <iframe src="https://giphy.com/embed/L08sJsg6tEUyb1E0VW" width="480" height="411" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <p><a href="https://giphy.com/stickers/GQItalia-sun-sole-gqsun-L08sJsg6tEUyb1E0VW">via GIPHY</a></p> -->
